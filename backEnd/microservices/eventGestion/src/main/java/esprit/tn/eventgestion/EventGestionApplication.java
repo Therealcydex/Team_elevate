@@ -1,4 +1,4 @@
-package esprit.candidat;
+package esprit.tn.eventgestion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CandidatApplication {
+
+public class EventGestionApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CandidatApplication.class, args);
+        SpringApplication.run(EventGestionApplication.class, args);
     }
 
 }
