@@ -1,0 +1,20 @@
+/* 1. Remove browser margins and fix height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Stops double scrollbars */
+}
+
+/* 2. Tell Angular to let the layout flow through its tags */
+app-root, app-sidebar, app-header {
+  display: contents;
+}
+
+/* 3. Ensure the Sidebar doesn't stretch weirdly */
+.sidebar {
+  height: 100vh !important;
+  position: sticky;
+  top: 0;
+}
